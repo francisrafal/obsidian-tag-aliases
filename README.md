@@ -10,9 +10,9 @@ Use short names for long tags. Define `ml` as an alias for `topics/machine-learn
 
 ## Install
 
-Requires Obsidian 1.14.0 or later. This is a private plugin, not a community-directory listing.
+Requires Obsidian 1.14.0 or later. This plugin is available from GitHub. It is not yet listed in the Obsidian community directory.
 
-1. Download `main.js` and `manifest.json` from this repository's latest release while signed into GitHub. Alternatively, download the `tag-aliases` artifact from a successful Actions run.
+1. Download `main.js` and `manifest.json` from [the latest release](https://github.com/francisrafal/obsidian-tag-aliases/releases/latest). No GitHub account is needed for release downloads. Alternatively, download the `tag-aliases` artifact from a successful Actions run.
 2. Put both files in `<vault>/.obsidian/plugins/tag-aliases/`.
 3. Reload Obsidian, then enable **Tag Aliases** under **Settings → Community plugins**.
 4. If desired, install **Tag Wrangler** from Obsidian's community directory. It is optional for alias insertion and required for automatic tag-rename integration.
@@ -25,6 +25,17 @@ npm run package
 ```
 
 Copy the two files from `dist/tag-aliases/` into the vault plugin folder. `SHA256SUMS.txt` contains their checksums.
+
+## Quick test
+
+Testers are welcome to download, install, and run the plugin to provide feedback.
+
+1. Create a new test vault and install the plugin as described above.
+2. Run **Tag Aliases: Edit tag aliases**. Set the canonical tag to `topics/ml` and add `ml` as an alias.
+3. In a note, type `#@ml/models` and select the suggestion. It should insert `#topics/ml/models`.
+4. Install and enable Tag Wrangler. In the Tags view, right-click `topics` and rename it to `research`.
+5. Type `#@ml/new`. It should now insert `#research/ml/new` without a reload.
+6. Report results in [GitHub Issues](https://github.com/francisrafal/obsidian-tag-aliases/issues), including the Obsidian version, operating system, plugin version, steps, and expected versus actual behavior. Use sample notes rather than private vault data.
 
 ## Add and use aliases
 
