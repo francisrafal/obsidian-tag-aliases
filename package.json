@@ -1,0 +1,20 @@
+{
+  "name": "obsidian-tag-aliases",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rename-safe tag aliases for Obsidian and Tag Wrangler",
+  "scripts": {
+    "build": "tsc --noEmit && node esbuild.config.mjs",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "check": "npm run build && npm run test:coverage",
+    "package": "npm run check && node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "5.1.0",
+    "esbuild": "0.28.2",
+    "obsidian": "1.14.4",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "tag-aliases",
+  "name": "Tag Aliases",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Insert canonical tags through aliases, with nested tags and rename-safe Tag Wrangler integration.",
+  "author": "Francis Rafal",
+  "authorUrl": "https://github.com/francisrafal",
+  "isDesktopOnly": false
+}
