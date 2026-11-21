@@ -11,7 +11,7 @@
     "package": "npm run check && node scripts/package.mjs"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "5.1.0",
+    "@vitest/coverage-v8": "5.1.1",
     "esbuild": "0.28.2",
     "obsidian": "1.14.4",
     "typescript": "7.0.2",
